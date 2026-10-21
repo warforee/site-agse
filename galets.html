@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galets — Jeu mobile | AGSE ENERGIE</title>
+<meta name="description" content="Galets, le jeu mobile de puzzle de tri de galets développé par AGSE ENERGIE.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="entete">
+  <div class="entete-interieur">
+    <div class="logo">AGSE <span>ENERGIE</span></div>
+    <nav class="principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="galets.html" class="actif">Galets</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Galets</h1>
+  <p>Un jeu de puzzle apaisant : triez les galets par couleur, niveau après niveau.</p>
+</div>
+
+<main class="conteneur">
+
+  <section>
+    <h2>Le jeu</h2>
+    <div class="carte">
+      <p>
+        Galets est un jeu mobile de puzzle dans lequel vous devez trier des galets de
+        différentes couleurs répartis dans plusieurs récipients, jusqu'à ce que chaque
+        couleur soit regroupée au bon endroit. Simple à prendre en main, le jeu propose
+        des niveaux de difficulté croissante pour un défi de logique accessible à tous.
+      </p>
+      <div class="badge-liste">
+        <!-- Remplacer "#" par les liens réels vers l'App Store et Google Play une fois le jeu publié -->
+        <a href="#" class="bouton">Télécharger sur l'App Store</a>
+        <a href="#" class="bouton-secondaire">Télécharger sur Google Play</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Informations utiles</h2>
+    <ul class="liste-propre">
+      <li>Politique de confidentialité : <a href="confidentialite.html">consulter la politique de confidentialité</a></li>
+      <li>Besoin d'aide ou une question ? <a href="support.html">page support</a></li>
+      <li>Contact : <a href="mailto:aurelien.samier@agse-energie.fr">aurelien.samier@agse-energie.fr</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <div>
+      <strong>AGSE ENERGIE</strong>
+      <ul>
+        <li>48 rue Pernety, 75014 Paris</li>
+        <li><a href="mailto:aurelien.samier@agse-energie.fr">aurelien.samier@agse-energie.fr</a></li>
+      </ul>
+    </div>
+    <div>
+      <strong>Liens</strong>
+      <ul>
+        <li><a href="galets.html">Galets (application mobile)</a></li>
+        <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+    <div class="pied-copy">&copy; <span id="annee"></span> AGSE ENERGIE — SAS au capital de 100 € — SIREN 903 971 265</div>
+  </div>
+</footer>
+
+<script>document.getElementById("annee").textContent = new Date().getFullYear();</script>
+</body>
+</html>

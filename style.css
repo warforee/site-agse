@@ -1,0 +1,288 @@
+:root {
+  --bleu-fonce: #0f2a3f;
+  --bleu: #10507a;
+  --accent: #2ea67a;
+  --fond: #f7f9fa;
+  --texte: #1f2d33;
+  --texte-clair: #5b6b72;
+  --bordure: #e0e6e8;
+  --blanc: #ffffff;
+  --rayon: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: var(--texte);
+  background: var(--fond);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--bleu);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+.conteneur {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* En-tête */
+header.entete {
+  background: var(--blanc);
+  border-bottom: 1px solid var(--bordure);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.entete-interieur {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--bleu-fonce);
+  letter-spacing: 0.5px;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+nav.principale ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav.principale a {
+  color: var(--texte);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+nav.principale a.actif {
+  color: var(--accent);
+}
+
+/* Bannière / Hero */
+.hero {
+  background: linear-gradient(135deg, var(--bleu-fonce), var(--bleu));
+  color: var(--blanc);
+  padding: 64px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: 2.1rem;
+}
+
+.hero p {
+  margin: 0 auto;
+  max-width: 640px;
+  font-size: 1.05rem;
+  color: #dbe9f1;
+}
+
+/* Sections */
+main {
+  padding: 48px 0 20px;
+}
+
+section {
+  margin-bottom: 44px;
+}
+
+h1, h2, h3 {
+  color: var(--bleu-fonce);
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 18px;
+}
+
+.carte {
+  background: var(--blanc);
+  border: 1px solid var(--bordure);
+  border-radius: var(--rayon);
+  padding: 24px;
+}
+
+.grille {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 680px) {
+  .grille {
+    grid-template-columns: 1fr;
+  }
+}
+
+.liste-propre {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.liste-propre li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--bordure);
+}
+
+.liste-propre li:last-child {
+  border-bottom: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--blanc);
+}
+
+table caption {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border: 1px solid var(--bordure);
+  font-size: 0.95rem;
+  vertical-align: top;
+}
+
+th {
+  background: #eef3f5;
+  color: var(--bleu-fonce);
+}
+
+.bouton {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--blanc);
+  padding: 12px 24px;
+  border-radius: var(--rayon);
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.bouton:hover {
+  background: #268a66;
+  text-decoration: none;
+}
+
+.bouton-secondaire {
+  display: inline-block;
+  border: 1px solid var(--bleu);
+  color: var(--bleu);
+  padding: 11px 23px;
+  border-radius: var(--rayon);
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.badge-liste {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--bordure);
+  padding: 16px 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+/* Pied de page */
+footer.pied {
+  background: var(--bleu-fonce);
+  color: #c9d7de;
+  padding: 32px 0;
+  margin-top: 40px;
+}
+
+footer.pied .conteneur {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer.pied a {
+  color: #cfe3ec;
+}
+
+footer.pied ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+footer.pied li {
+  margin-bottom: 6px;
+}
+
+.pied-copy {
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  font-size: 0.85rem;
+  color: #9fb3bd;
+}
+
+.encart-info {
+  background: #eaf4ef;
+  border-left: 4px solid var(--accent);
+  padding: 16px 20px;
+  border-radius: var(--rayon);
+  margin: 20px 0;
+}
